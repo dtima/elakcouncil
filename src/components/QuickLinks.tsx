@@ -6,25 +6,25 @@ export function QuickLinks() {
   const { t } = useLanguage();
 
   const quickLinks = [
-    { icon: <FileText className="h-6 w-6 md:h-8 md:w-8" />, label: t("quickLinks.licenses"), href: "/services/licenses" },
-    { icon: <Building2 className="h-6 w-6 md:h-8 md:w-8" />, label: t("quickLinks.administrative"), href: "/services/administrative" },
-    { icon: <Wrench className="h-6 w-6 md:h-8 md:w-8" />, label: t("quickLinks.technical"), href: "/services/technical" },
-    { icon: <FileCheck className="h-6 w-6 md:h-8 md:w-8" />, label: t("quickLinks.birth"), href: "/services/birth-certificate" },
-    { icon: <Users className="h-6 w-6 md:h-8 md:w-8" />, label: t("quickLinks.social"), href: "/services/social-affairs" },
-    { icon: <Receipt className="h-6 w-6 md:h-8 md:w-8" />, label: t("quickLinks.tax"), href: "/services/tax" },
+    { icon: <FileText className="h-6 w-6 md:h-8 md:w-8" />, label: "Civil Status Services", href: "/services/civil-status" },
+    { icon: <Building2 className="h-6 w-6 md:h-8 md:w-8" />, label: "Tourism Information", href: "/tourism" },
+    { icon: <Wrench className="h-6 w-6 md:h-8 md:w-8" />, label: "Technical Services", href: "/services/technical" },
+    { icon: <FileCheck className="h-6 w-6 md:h-8 md:w-8" />, label: "Business Permits", href: "/services/permits" },
+    { icon: <Users className="h-6 w-6 md:h-8 md:w-8" />, label: "Social Affairs", href: "/services/social" },
+    { icon: <Receipt className="h-6 w-6 md:h-8 md:w-8" />, label: "Tax Services", href: "/services/tax" },
   ];
 
   return (
-    <section className="py-8 md:py-16 bg-white">
+    <section className="py-8 md:py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">{t("quickLinks.title")}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">Council Services</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6">
           {quickLinks.map((link, index) => (
             <Button
               key={index}
               variant="outline"
               asChild
-              className="h-auto flex-col gap-2 md:gap-4 p-3 md:p-6 hover:bg-cameroon-green/5"
+              className="h-auto flex-col gap-2 md:gap-4 p-3 md:p-6 hover:bg-green-50"
             >
               <a href={link.href}>
                 {link.icon}

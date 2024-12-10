@@ -1,5 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Newspaper } from "lucide-react";
 import { Button } from "./ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 
@@ -9,23 +9,23 @@ export function News() {
   const newsItems = [
     {
       id: 1,
-      title: "DTIMA Launch in Yaounde",
-      description: "Mbonge Council joins 14 other participating councils to start its digital transformation.",
-      date: "2024-02-28",
+      title: "DTIMA Launch in Elak Council",
+      description: "Elak Council joins other participating councils to start its digital transformation journey, marking a new era of modernized services.",
+      date: "2024-03-14",
       image: "/lovable-uploads/8abd09c4-579f-414b-86ea-c30ba8354f63.png"
     },
     {
       id: 2,
-      title: "Mbonge Council Leads in PIP Execution",
-      description: "Mbonge Council in Meme Division of the South West Region, has emerged first in the execution of Public Investment Projects, PIP. The statistics were made public during the Meme third quarter Divisional Participatory Follow-up Committee meeting.",
-      date: "2024-02-14",
+      title: "Mount Oku Conservation Initiative",
+      description: "New measures implemented to protect Mount Oku, the second highest peak in West Africa, ensuring sustainable tourism and environmental preservation.",
+      date: "2024-03-10",
       image: "/lovable-uploads/639c2931-b6cf-499e-9da9-619614daebde.png"
     },
     {
       id: 3,
-      title: "Boosting Local Revenue: Mbonge, Kumba II Councils Acquire New Trucks",
-      description: "The 40 ton trucks will be used to clear waste as well as to generate revenue through rents for the different municipalities.",
-      date: "2024-02-13",
+      title: "Lake Oku Preservation Project",
+      description: "Community-led initiative launches to preserve Lake Oku's unique ecosystem and promote sustainable tourism practices.",
+      date: "2024-03-08",
       image: "/lovable-uploads/7ac15d57-65eb-4a0c-bccf-b86ae5953c11.png"
     }
   ];
