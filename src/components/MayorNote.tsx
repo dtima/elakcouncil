@@ -11,19 +11,20 @@ export function MayorNote() {
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative order-2 md:order-1">
-            <img
-              src="/lovable-uploads/39889b06-e650-415a-90d6-880f1e0886e2.png"
-              alt="Mayor of Elak Council"
-              className="w-full rounded-lg shadow-xl"
-            />
+            <Avatar className="w-full h-[400px] rounded-lg shadow-xl">
+              <AvatarFallback className="bg-green-100">
+                <User className="w-24 h-24 text-green-600" />
+              </AvatarFallback>
+            </Avatar>
           </div>
           
           <div className="space-y-4 md:space-y-6 order-1 md:order-2">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Welcome to Elak Council</h3>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              As the Mayor of Elak Council, I am committed to serving our community and preserving our rich cultural heritage. 
-              From Mount Oku to Lake Oku, our region's natural wonders are matched only by the warmth and resilience of our people. 
-              Together, we're building a sustainable future while honoring our traditions.
+              As the Mayor of Elak Council, I am dedicated to serving our community and preserving our rich cultural heritage. 
+              From Mount Oku, standing at 3011m above sea level, to Lake Oku and the Kilum forest reserve, our region's natural 
+              wonders are matched only by the warmth and resilience of our people. Together, we're building a sustainable future 
+              while honoring our traditions.
             </p>
             <Button className="mt-4 md:mt-6 bg-green-600 hover:bg-green-700 text-sm md:text-base">
               Learn More About Our Vision

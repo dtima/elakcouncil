@@ -6,7 +6,7 @@ export const Logo = () => {
       aria-label="Home"
     >
       <img
-        src="/lovable-uploads/695e7c5c-21ab-43b6-81eb-390c5abdaf9d.png"
+        src="/lovable-uploads/101ecb9b-292e-4ae7-b5bb-0e4f82d955b5.png"
         alt="Elak Council Logo"
         className="h-12 w-12"
         loading="eager"
