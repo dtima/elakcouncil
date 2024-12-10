@@ -1,5 +1,7 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "./ui/button";
+import { Avatar, AvatarFallback } from "./ui/avatar";
+import { User } from "lucide-react";
 
 export function MayorNote() {
   const { t } = useLanguage();
