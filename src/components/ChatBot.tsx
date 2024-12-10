@@ -7,28 +7,28 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const faqs = [
   {
-    question: "How do I obtain a birth certificate in Mbonge Council?",
-    answer: "To obtain a birth certificate in Mbonge Council, visit the Civil Status Registry office at the Council with the required documents: declaration of birth from the hospital, parents' identification, and marriage certificate (if applicable). The process typically takes 3-5 working days.",
+    question: "How do I obtain a birth certificate in Elak Council?",
+    answer: "To obtain a birth certificate in Elak Council, visit the Civil Status Registry office with the required documents: declaration of birth from the hospital, parents' identification, and marriage certificate (if applicable). The process typically takes 3-5 working days.",
   },
   {
-    question: "What are the market days in Mbonge?",
-    answer: "The main market day in Mbonge is every Thursday. The market operates from early morning until evening, featuring local produce, goods, and services. There's also a smaller daily market for essential items.",
+    question: "What are the main tourist attractions in Elak?",
+    answer: "Elak boasts several notable attractions including Mount Oku (second highest in West Africa at 3011M), Lake Oku, the Kilum forest reserve, multiple waterfalls (Tolon, Kenshing, Enfwe, etc.), and the historic Oku Fon's palace. The area is also famous for its cultural heritage and traditional crafts.",
   },
   {
     question: "How can I pay my council taxes?",
-    answer: "Council taxes can be paid directly at the Mbonge Council Revenue Office during working hours (Monday to Friday, 7:30 AM - 3:30 PM). You can also pay through authorized mobile money agents in the municipality.",
+    answer: "Council taxes can be paid directly at the Elak Council Revenue Office during working hours (Monday to Friday, 8:15 AM - 5:00 PM). The council is working on implementing digital payment solutions for easier access.",
   },
   {
-    question: "What documents do I need for a building permit in Mbonge?",
-    answer: "For a building permit in Mbonge, you need: architectural plans (3 copies), proof of land ownership, site plan, technical report, tax clearance certificate, and application letter to the Mayor. Submit these at the Technical Service office of the Council.",
+    question: "What documents do I need for a building permit in Elak?",
+    answer: "For a building permit in Elak, you need: architectural plans (3 copies), proof of land ownership, site plan, technical report, tax clearance certificate, and application letter to the Mayor. Submit these at the Technical Service office of the Council.",
   },
   {
-    question: "How do I report issues in my neighborhood?",
-    answer: "You can report neighborhood issues by: 1) Visiting the Mbonge Council office in person, 2) Calling our service desk at the published council number, or 3) Through your Quarter Head who will relay the information to the appropriate council department.",
+    question: "How can I visit the Kilum forest reserve?",
+    answer: "To visit the Kilum forest reserve, contact the Elak Council Tourism Office or the Forest Management Institutions (FMIs). Guided tours are available, and you'll need to obtain necessary permits. The reserve is home to unique flora and is an important conservation area.",
   },
   {
-    question: "What are the requirements for business registration in Mbonge?",
-    answer: "To register a business in Mbonge, you need: valid ID, tax payer's card, business plan or description, location details, and applicable fees. Visit the Council's Economic Development office for guidance and processing.",
+    question: "What are the requirements for business registration in Elak?",
+    answer: "To register a business in Elak, you need: valid ID, taxpayer's card, business plan or description, location details, and applicable fees. Visit the Council's Economic Development office for guidance and processing.",
   },
 ];
 
@@ -46,7 +46,7 @@ const ChatBot = () => {
         </SheetTrigger>
         <SheetContent className="w-[90vw] sm:w-[540px]">
           <SheetHeader>
-            <SheetTitle>How can we help you with Mbonge Council services?</SheetTitle>
+            <SheetTitle>How can we help you with Elak Council services?</SheetTitle>
           </SheetHeader>
           <div className="mt-4 h-[80vh] flex flex-col">
             {selectedFaq ? (
@@ -65,7 +65,7 @@ const ChatBot = () => {
               </div>
             ) : (
               <Command className="rounded-lg border shadow-md">
-                <CommandInput placeholder="Search Mbonge Council services and information..." />
+                <CommandInput placeholder="Search Elak Council services and information..." />
                 <CommandList>
                   <CommandEmpty>No results found.</CommandEmpty>
                   <CommandGroup heading="Frequently Asked Questions">
