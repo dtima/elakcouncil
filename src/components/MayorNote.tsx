@@ -1,7 +1,5 @@
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Button } from "./ui/button";
-import { Avatar, AvatarFallback } from "./ui/avatar";
-import { User } from "lucide-react";
 
 export function MayorNote() {
   const { t } = useLanguage();
@@ -13,17 +11,17 @@ export function MayorNote() {
         
         <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
           <div className="relative order-2 md:order-1">
-            <Avatar className="w-full h-[400px] rounded-lg shadow-xl">
-              <AvatarFallback className="bg-green-100">
-                <User className="w-24 h-24 text-green-600" />
-              </AvatarFallback>
-            </Avatar>
+            <img 
+              src="/lovable-uploads/fa9ab9eb-2f8d-4d86-a6c2-ef6b7be95ba4.png"
+              alt="Mayor of Elak Council"
+              className="w-full h-[400px] object-cover rounded-lg shadow-xl"
+            />
           </div>
           
           <div className="space-y-4 md:space-y-6 order-1 md:order-2">
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Welcome to Elak Council</h3>
             <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-              As the Mayor of Elak Council, I am dedicated to serving our community and preserving our rich cultural heritage. 
+              As the Mayor of Elak Council, I am committed to serving our community and preserving our rich cultural heritage. 
               From Mount Oku, standing at 3011m above sea level, to Lake Oku and the Kilum forest reserve, our region's natural 
               wonders are matched only by the warmth and resilience of our people. Together, we're building a sustainable future 
               while honoring our traditions.

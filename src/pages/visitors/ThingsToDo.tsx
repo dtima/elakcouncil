@@ -9,11 +9,11 @@ export default function ThingsToDo() {
         <div className="relative h-[400px] overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb"
-            alt="Things to Do in Mbonge"
+            alt="Things to Do in Elak"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h1 className="text-4xl font-bold text-white">Things to Do in Mbonge</h1>
+            <h1 className="text-4xl font-bold text-white">Things to Do in Elak</h1>
           </div>
         </div>
 
@@ -23,27 +23,27 @@ export default function ThingsToDo() {
               <h2 className="text-2xl font-bold">Natural Attractions</h2>
               <div className="space-y-4">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Ekombe Waterfall</h3>
+                  <h3 className="text-xl font-semibold mb-2">Mount Oku</h3>
                   <p className="text-gray-600 mb-4">
-                    A serene escape surrounded by lush greenery, perfect for nature lovers
-                    and photographers.
+                    Second highest peak in West Africa, standing at 3011m above sea level,
+                    offering breathtaking views and hiking opportunities.
                   </p>
                   <ul className="list-disc list-inside text-gray-600">
                     <li>Guided tours available</li>
-                    <li>Picnic areas</li>
                     <li>Hiking trails</li>
+                    <li>Photography spots</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Barombi Kotto Lake</h3>
+                  <h3 className="text-xl font-semibold mb-2">Lake Oku</h3>
                   <p className="text-gray-600 mb-4">
-                    Perfect for nature enthusiasts and adventure seekers, offering
-                    boat rides and fishing opportunities.
+                    The largest lake in Cameroon, offering unique biodiversity
+                    and scenic beauty.
                   </p>
                   <ul className="list-disc list-inside text-gray-600">
-                    <li>Boat rentals</li>
-                    <li>Fishing spots</li>
-                    <li>Lakeside restaurants</li>
+                    <li>Nature walks</li>
+                    <li>Bird watching</li>
+                    <li>Photography</li>
                   </ul>
                 </div>
               </div>
@@ -53,53 +53,53 @@ export default function ThingsToDo() {
               <h2 className="text-2xl font-bold">Cultural Experiences</h2>
               <div className="space-y-4">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Traditional Markets</h3>
+                  <h3 className="text-xl font-semibold mb-2">Oku Palace</h3>
                   <p className="text-gray-600 mb-4">
-                    Experience local life and shop for authentic crafts and produce.
+                    Experience the rich cultural heritage at the traditional Fon's palace.
                   </p>
                   <ul className="list-disc list-inside text-gray-600">
-                    <li>Local crafts</li>
-                    <li>Fresh produce</li>
-                    <li>Traditional food</li>
+                    <li>Cultural exhibitions</li>
+                    <li>Traditional ceremonies</li>
+                    <li>Historical tours</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Cultural Shows</h3>
+                  <h3 className="text-xl font-semibold mb-2">Cultural Center</h3>
                   <p className="text-gray-600 mb-4">
-                    Watch traditional dance performances and music shows.
+                    Discover local arts, crafts, and cultural performances.
                   </p>
                   <ul className="list-disc list-inside text-gray-600">
-                    <li>Weekly performances</li>
-                    <li>Interactive sessions</li>
-                    <li>Traditional music</li>
+                    <li>Traditional dance shows</li>
+                    <li>Art exhibitions</li>
+                    <li>Craft demonstrations</li>
                   </ul>
                 </div>
               </div>
             </div>
 
             <div className="space-y-6">
-              <h2 className="text-2xl font-bold">Activities & Tours</h2>
+              <h2 className="text-2xl font-bold">Natural Heritage</h2>
               <div className="space-y-4">
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Guided Tours</h3>
+                  <h3 className="text-xl font-semibold mb-2">Kilum Forest Reserve</h3>
                   <p className="text-gray-600 mb-4">
-                    Explore Mbonge with knowledgeable local guides.
+                    Explore the community forest with unique flora and fauna.
                   </p>
                   <ul className="list-disc list-inside text-gray-600">
-                    <li>Historical tours</li>
-                    <li>Nature walks</li>
-                    <li>Cultural tours</li>
+                    <li>Guided nature walks</li>
+                    <li>Bird watching</li>
+                    <li>Botanical tours</li>
                   </ul>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-2">Adventure Sports</h3>
+                  <h3 className="text-xl font-semibold mb-2">Waterfalls</h3>
                   <p className="text-gray-600 mb-4">
-                    Get your adrenaline pumping with outdoor activities.
+                    Visit our numerous scenic waterfalls including Tolon, Kenshing, and Mbancham.
                   </p>
                   <ul className="list-disc list-inside text-gray-600">
-                    <li>Hiking</li>
-                    <li>Mountain biking</li>
-                    <li>Rock climbing</li>
+                    <li>Hiking trails</li>
+                    <li>Photography spots</li>
+                    <li>Picnic areas</li>
                   </ul>
                 </div>
               </div>

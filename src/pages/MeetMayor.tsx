@@ -16,34 +16,34 @@ const MeetMayor = () => {
                     Meet Our Mayor
                   </h1>
                   <p className="text-lg text-gray-600">
-                    Our dynamic and dedicated Mayor welcomes every resident to actively participate in building a unified and prosperous Mbonge.
+                    Our dynamic and dedicated Mayor welcomes every resident to actively participate in building a unified and prosperous Elak Council.
                   </p>
                   <div className="space-y-4">
-                    <h2 className="text-xl font-semibold text-gray-900">Vision for Mbonge</h2>
+                    <h2 className="text-xl font-semibold text-gray-900">Vision for Elak</h2>
                     <p className="text-gray-600">
-                      Under the leadership of our Mayor, the Mbonge Council strives to address the needs of its residents and develop infrastructure that supports progress and innovation.
+                      Under our Mayor's leadership, the Elak Council strives to address the needs of its residents and develop infrastructure that supports progress while preserving our rich cultural heritage.
                     </p>
                     <h2 className="text-xl font-semibold text-gray-900">Key Priorities</h2>
                     <ul className="list-disc list-inside space-y-2 text-gray-600">
-                      <li>Improving road networks and infrastructure</li>
-                      <li>Advancing electrification projects</li>
-                      <li>Supporting industrialization while preserving natural resources</li>
-                      <li>Enhancing educational facilities</li>
-                      <li>Strengthening community engagement</li>
+                      <li>Preserving and protecting the Kilum forest reserve</li>
+                      <li>Improving agricultural infrastructure and support</li>
+                      <li>Developing tourism around Mount Oku and Lake Oku</li>
+                      <li>Enhancing educational facilities across our 36 villages</li>
+                      <li>Strengthening community engagement and cultural preservation</li>
                     </ul>
                   </div>
                 </div>
                 <div className="space-y-4">
                   <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
                     <img
-                      src="/lovable-uploads/457d2081-f28b-4b1c-a0aa-db61d1abfe7f.png"
-                      alt="Chief Daniel Matta Mokambe, Lord Mayor of Mbonge"
+                      src="/lovable-uploads/fa9ab9eb-2f8d-4d86-a6c2-ef6b7be95ba4.png"
+                      alt="Mayor of Elak Council"
                       className="w-full h-full object-cover"
                     />
                   </div>
                   <div className="text-center">
-                    <h2 className="text-xl font-bold text-gray-900">Chief Daniel Matta Mokambe</h2>
-                    <p className="text-lg text-gray-600">Lord Mayor</p>
+                    <h2 className="text-xl font-bold text-gray-900">The Mayor</h2>
+                    <p className="text-lg text-gray-600">Lord Mayor of Elak Council</p>
                   </div>
                 </div>
               </div>
