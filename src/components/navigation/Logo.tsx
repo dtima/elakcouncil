@@ -7,12 +7,12 @@ export const Logo = () => {
     >
       <img
         src="/lovable-uploads/695e7c5c-21ab-43b6-81eb-390c5abdaf9d.png"
-        alt="Mbonge Council Logo"
+        alt="Elak Council Logo"
         className="h-12 w-12"
         loading="eager"
       />
       <span className="text-xl font-bold text-gray-900">
-        Mbonge Council
+        Elak Council
       </span>
     </a>
   );

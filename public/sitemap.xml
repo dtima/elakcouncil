@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mbongecouncil.cm/</loc>
+    <loc>https://elakcouncil.cm/</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://mbongecouncil.cm/government/meet-mayor</loc>
+    <loc>https://elakcouncil.cm/government/meet-mayor</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mbongecouncil.cm/government/cabinet</loc>
+    <loc>https://elakcouncil.cm/government/cabinet</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mbongecouncil.cm/business/licenses</loc>
+    <loc>https://elakcouncil.cm/tourism/lake-oku</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://mbongecouncil.cm/visitors/history</loc>
+    <loc>https://elakcouncil.cm/tourism/mount-oku</loc>
     <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>
