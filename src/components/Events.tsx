@@ -8,7 +8,7 @@ export function Events() {
   const events = [
     {
       id: 1,
-      title: "Mbonge Council Budgetary Session",
+      title: "Elak Council Budgetary Session",
       date: "2024-12-11",
       time: "09:00 AM - 05:00 PM",
       month: "DEC",
@@ -16,7 +16,7 @@ export function Events() {
     },
     {
       id: 2,
-      title: "Mbonge Cultural Festival",
+      title: "Elak Cultural Festival",
       date: "2025-02-15",
       time: "10:00 AM - Feb, 17 06:00 PM",
       month: "FEB",
@@ -27,7 +27,7 @@ export function Events() {
   return (
     <section className="py-8 md:py-16 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">{t("events.title")}</h2>
+        <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8">Events</h2>
         
         <div className="space-y-3 md:space-y-4 mb-6 md:mb-8">
           {events.map((event) => (
