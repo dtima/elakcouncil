@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { MapPin, Clock, Bus, Phone } from "lucide-react";
+import { MapPin, Car, Bus, Info } from "lucide-react";
 
 export default function Directions() {
   return (
@@ -9,67 +9,97 @@ export default function Directions() {
       <main className="pt-16">
         <div className="bg-cameroon-green text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 className="text-4xl font-bold mb-4">Directions to Council Hall</h1>
-            <p className="text-xl">Find us easily and engage in community governance</p>
+            <h1 className="text-4xl font-bold mb-6">Directions to Elak Council Hall</h1>
+            <p className="text-xl">Located in Bui Division, North West Region, approximately 25km from Kumbo town</p>
           </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="space-y-8">
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <MapPin className="text-cameroon-green" />
-                  <h2 className="text-2xl font-bold">Our Location</h2>
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-4">Location Details</h2>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-6 h-6 text-cameroon-green mt-1" />
+                    <div>
+                      <p className="font-semibold">Address</p>
+                      <p className="text-gray-600">
+                        P.O. Box 03 Elak Oku<br />
+                        North West Region<br />
+                        Bui Division
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Info className="w-6 h-6 text-cameroon-green mt-1" />
+                    <div>
+                      <p className="font-semibold">Geographical Location</p>
+                      <p className="text-gray-600">
+                        Bounded by:<br />
+                        North: Noni council<br />
+                        East: Jakiri council<br />
+                        West: Belo council<br />
+                        South: Babessi Council
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-gray-600">
-                  Mbonge Council Hall<br />
-                  Main Street, Mbonge<br />
-                  South West Region, Cameroon
-                </p>
               </div>
 
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <Clock className="text-cameroon-green" />
-                  <h2 className="text-2xl font-bold">Opening Hours</h2>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-4">Transportation Options</h2>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Car className="w-6 h-6 text-cameroon-green mt-1" />
+                    <div>
+                      <p className="font-semibold">By Car</p>
+                      <p className="text-gray-600">
+                        25km drive from Kumbo town<br />
+                        Regular taxi services available
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Bus className="w-6 h-6 text-cameroon-green mt-1" />
+                    <div>
+                      <p className="font-semibold">Public Transport</p>
+                      <p className="text-gray-600">
+                        Regular bus services from Kumbo<br />
+                        Motor bike services within Elak
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <ul className="space-y-2 text-gray-600">
-                  <li>Monday - Friday: 8:00 AM - 4:30 PM</li>
-                  <li>Saturday: 9:00 AM - 12:00 PM</li>
-                  <li>Sunday: Closed</li>
-                </ul>
-              </div>
-
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <Bus className="text-cameroon-green" />
-                  <h2 className="text-2xl font-bold">Public Transport</h2>
-                </div>
-                <ul className="space-y-2 text-gray-600">
-                  <li>Bus Route 1: Stops directly in front of Council Hall</li>
-                  <li>Bus Route 2: 5-minute walk from Market Square stop</li>
-                  <li>Taxi services available</li>
-                </ul>
-              </div>
-
-              <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <Phone className="text-cameroon-green" />
-                  <h2 className="text-2xl font-bold">Contact</h2>
-                </div>
-                <p className="text-gray-600">
-                  Phone: +237 123 456 789<br />
-                  Email: info@mbongecouncil.cm
-                </p>
               </div>
             </div>
 
-            <div className="bg-gray-100 p-6 rounded-lg h-[500px] flex items-center justify-center">
-              <p className="text-gray-600 text-center">
-                Interactive Map Placeholder<br />
-                (Integration with Google Maps or similar service)
-              </p>
+            <div className="space-y-6">
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-4">Operating Hours</h2>
+                <p className="text-gray-600">
+                  Monday - Friday: 8:15 AM - 5:00 PM<br />
+                  Closed on weekends and public holidays
+                </p>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
+                <div className="space-y-2">
+                  <p className="text-gray-600">Phone: (+237) 675957333</p>
+                  <p className="text-gray-600">Alternative: (+237) 675730808</p>
+                  <p className="text-gray-600">Email: contact@elakcouncil.cm</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-4">Additional Information</h2>
+                <p className="text-gray-600">
+                  Elak Council serves an area of approximately 750 km² with an estimated population
+                  of 182,879 inhabitants. The council area comprises 36 villages, making it a central
+                  administrative hub for the region.
+                </p>
+              </div>
             </div>
           </div>
         </div>
