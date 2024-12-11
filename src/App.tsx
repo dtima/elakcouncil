@@ -9,6 +9,7 @@ import Admin from "./pages/Admin";
 import Cabinet from "./pages/Cabinet";
 import MeetMayor from "./pages/MeetMayor";
 import NotFound from "./pages/404";
+import Tourism from "./pages/tourism/Tourism";
 import ArtsCulture from "./pages/residents/ArtsCulture";
 import PublicSafety from "./pages/residents/PublicSafety";
 import ParksRecreation from "./pages/residents/ParksRecreation";
@@ -40,6 +41,7 @@ const App = () => (
             <Route path="/admin-dtima/*" element={<Admin />} />
             <Route path="/government/cabinet" element={<Cabinet />} />
             <Route path="/government/meet-mayor" element={<MeetMayor />} />
+            <Route path="/tourism" element={<Tourism />} />
             
             {/* Residents Routes */}
             <Route path="/residents/arts-culture" element={<ArtsCulture />} />
