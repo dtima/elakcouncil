@@ -10,4 +10,4 @@ Disallow: /admin-dtima/*
 Disallow: /private/*
 Disallow: /api/*
 
-Sitemap: https://mbongecouncil.cm/sitemap.xml
+Sitemap: https://elakcouncil.cm/sitemap.xml
