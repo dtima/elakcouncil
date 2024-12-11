@@ -1,110 +1,75 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Scroll, Users, Building, BookOpen } from "lucide-react";
 
 export default function History() {
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       <main className="pt-16">
-        <div className="relative h-[400px] overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1433086966358-54859d0ed716"
-            alt="Historical Elak"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h1 className="text-4xl font-bold text-white">History of Elak</h1>
+        <div className="bg-cameroon-green text-white py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl font-bold mb-4">History of Elak</h1>
+            <p className="text-xl">Discover our rich cultural heritage and origins</p>
           </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid gap-12 md:grid-cols-2">
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-3xl font-bold mb-4 flex items-center gap-2">
-                  <Scroll className="h-8 w-8" />
-                  Our Heritage
-                </h2>
-                <p className="text-gray-600">
-                  The Elak council was created by presidential decree No 77/203 of 19th June 1977 as a split from the then Nso council. 
-                  Oral tradition traces the Oku people's origins to Egypt, from where they migrated through Belbele and eventually 
-                  settled in the Tikari region at Rifem.
-                </p>
-              </div>
+          <div className="prose prose-lg max-w-none">
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6">Origins and Early History</h2>
+              <p className="text-gray-600 mb-4">
+                Oral tradition traces the Oku people's origins to Egypt. Due to harsh climatic conditions, 
+                they migrated and eventually settled in Belbele, living as hunters. Later, they and their 
+                Nso brothers moved to the savannah land of Tikari in an area called Rifem.
+              </p>
+              <p className="text-gray-600 mb-4">
+                The united family at Tikari later separated due to a succession dispute. Nso, the elder 
+                brother, left with some traditional belongings to establish a new home across the river.
+              </p>
+            </section>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <BookOpen className="h-6 w-6" />
-                  Historical Timeline
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex gap-4">
-                    <div className="w-24 font-bold">Ancient</div>
-                    <div className="flex-1">
-                      <p className="text-gray-600">Migration from Egypt to Belbele</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="w-24 font-bold">Settlement</div>
-                    <div className="flex-1">
-                      <p className="text-gray-600">Establishment in Tikar region at Rifem</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="w-24 font-bold">1977</div>
-                    <div className="flex-1">
-                      <p className="text-gray-600">Creation of Elak Council by presidential decree</p>
-                    </div>
-                  </div>
-                  <div className="flex gap-4">
-                    <div className="w-24 font-bold">1978</div>
-                    <div className="flex-1">
-                      <p className="text-gray-600">Council begins operations</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6">The Story of Tatah</h2>
+              <p className="text-gray-600 mb-4">
+                At Kovifem, Nso had four children with his wife Yeafon, including Tatah, who would later 
+                found Oku. A succession dispute led to Tatah settling in the Ngongba forest between 
+                present-day Oku and Nso.
+              </p>
+              <p className="text-gray-600 mb-4">
+                During his hunting expeditions, Tatah discovered the Ntul people living in scattered 
+                settlements. He was welcomed warmly and eventually became an important figure in their 
+                community, later succeeding as their leader.
+              </p>
+            </section>
 
-            <div className="space-y-8">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Users className="h-6 w-6" />
-                  Cultural Heritage
-                </h3>
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="font-semibold">Ethnic Groups</h4>
-                    <p className="text-gray-600">
-                      The people of Elak belong mainly to the Tikar ethnic group, with several other clans including Nso, 
-                      Noni, Mbororos, Bamunka and Wimbum coexisting harmoniously.
-                    </p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold">Religion</h4>
-                    <p className="text-gray-600">
-                      The municipality embraces religious diversity, with Christianity (Presbyterian, Roman Catholic, Baptist, 
-                      Full Gospel Mission), Islam, and African Traditional Religion practitioners contributing to community development.
-                    </p>
-                  </div>
-                </div>
-              </div>
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6">Modern Era</h2>
+              <p className="text-gray-600 mb-4">
+                The Elak council was established by presidential decree No 77/203 of June 19, 1977, 
+                separating from the then Nso council. The council began operations in 1978 and has since 
+                been managed by three Municipal Administrators and three Mayors.
+              </p>
+              <p className="text-gray-600 mb-4">
+                Today, Elak Council oversees 36 villages, each headed by a 3rd class chief, except for 
+                Elak village which is led by a 2nd class chief. The municipality has grown significantly, 
+                with an estimated population of 182,879 inhabitants.
+              </p>
+            </section>
 
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-                  <Building className="h-6 w-6" />
-                  Demographics
-                </h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>Population: 182,879 inhabitants</li>
-                  <li>36 villages under traditional leadership</li>
-                  <li>Common language: EblamEbkuo</li>
-                  <li>Surface area: 750 km²</li>
-                  <li>Population density: 253 inhabitants per km²</li>
-                </ul>
-              </div>
-            </div>
+            <section>
+              <h2 className="text-3xl font-bold mb-6">Cultural Heritage</h2>
+              <p className="text-gray-600 mb-4">
+                The name "Oku" has its own interesting origin story, derived from "Vekui" in Lamnso, 
+                meaning "plaster remover." This name emerged from an incident where Oku people removed 
+                plaster from a building in Nso after not being fed for their work.
+              </p>
+              <p className="text-gray-600">
+                The municipality maintains rich cultural traditions, including the four-week mourning 
+                period for a Fon's mother, a custom that dates back to Tatah's time. The practice of 
+                offering kola nuts to guests also originated from Tatah's first encounter with the 
+                Ntul people.
+              </p>
+            </section>
           </div>
         </div>
       </main>

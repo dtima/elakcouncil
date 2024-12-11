@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { Mountain, TreePine, Camera, Map } from "lucide-react";
+import { MapPin, Camera, Tree } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ThingsToDo() {
@@ -8,73 +8,126 @@ export default function ThingsToDo() {
     <div className="min-h-screen bg-white">
       <Navigation />
       <main className="pt-16">
-        <div className="relative h-[400px] overflow-hidden">
-          <img
-            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e"
-            alt="Mount Oku"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <div className="text-center text-white">
-              <h1 className="text-4xl font-bold mb-4">Discover Elak</h1>
-              <p className="text-xl">Experience the beauty of Cameroon's second-highest peak</p>
-            </div>
+        <div className="bg-cameroon-green text-white py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h1 className="text-4xl font-bold mb-4">Things To Do in Elak</h1>
+            <p className="text-xl">Explore our natural wonders and cultural heritage</p>
           </div>
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-            <div className="p-6 border rounded-lg">
-              <Mountain className="w-12 h-12 text-cameroon-green mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Mount Oku</h3>
-              <p className="text-gray-600 mb-4">Second highest peak in West Africa, 3011M above sea level</p>
-              <Button variant="outline" className="w-full">Learn More</Button>
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img 
+                src="/lovable-uploads/34e15787-432a-4055-b71f-2acb05e270ff.png" 
+                alt="Mount Oku" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Mount Oku</h3>
+                <p className="text-gray-600 mb-4">
+                  Climb West Africa's second-highest peak at 3,011m above sea level.
+                </p>
+                <div className="flex items-center text-gray-500 mb-4">
+                  <MapPin className="h-5 w-5 mr-2" />
+                  <span>Elak-Oku</span>
+                </div>
+                <Button className="w-full">Learn More</Button>
+              </div>
             </div>
-            <div className="p-6 border rounded-lg">
-              <TreePine className="w-12 h-12 text-cameroon-green mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Kilum Forest</h3>
-              <p className="text-gray-600 mb-4">Unique mountain forest reserve with endemic species</p>
-              <Button variant="outline" className="w-full">Explore</Button>
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img 
+                src="/lovable-uploads/695e7c5c-21ab-43b6-81eb-390c5abdaf9d.png" 
+                alt="Lake Oku" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Lake Oku</h3>
+                <p className="text-gray-600 mb-4">
+                  Visit Cameroon's largest crater lake and its unique ecosystem.
+                </p>
+                <div className="flex items-center text-gray-500 mb-4">
+                  <MapPin className="h-5 w-5 mr-2" />
+                  <span>Oku Highland</span>
+                </div>
+                <Button className="w-full">Plan Visit</Button>
+              </div>
             </div>
-            <div className="p-6 border rounded-lg">
-              <Camera className="w-12 h-12 text-cameroon-green mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Cultural Sites</h3>
-              <p className="text-gray-600 mb-4">Visit the Oku Fon's palace and cultural center</p>
-              <Button variant="outline" className="w-full">Visit</Button>
-            </div>
-            <div className="p-6 border rounded-lg">
-              <Map className="w-12 h-12 text-cameroon-green mb-4" />
-              <h3 className="text-xl font-semibold mb-2">Natural Wonders</h3>
-              <p className="text-gray-600 mb-4">Discover Lake Oku and stunning waterfalls</p>
-              <Button variant="outline" className="w-full">Discover</Button>
+
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img 
+                src="/lovable-uploads/4be57948-b4b2-48cd-8f75-8d20c6518542.png" 
+                alt="Kilum Forest" 
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">Kilum Forest Reserve</h3>
+                <p className="text-gray-600 mb-4">
+                  Explore unique flora and fauna in our protected forest reserve.
+                </p>
+                <div className="flex items-center text-gray-500 mb-4">
+                  <Tree className="h-5 w-5 mr-2" />
+                  <span>Kilum-Ijim Forest</span>
+                </div>
+                <Button className="w-full">Discover</Button>
+              </div>
             </div>
           </div>
 
-          <div className="mt-12">
-            <h2 className="text-3xl font-bold mb-6">Featured Attractions</h2>
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Natural Attractions</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>Lake Oku - Largest lake in Cameroon</li>
-                  <li>Tolon waterfall</li>
-                  <li>Kenshing waterfall</li>
-                  <li>Enfwe waterfall</li>
-                  <li>Mbancham waterfall</li>
-                  <li>Ijim mountain</li>
-                </ul>
-              </div>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-semibold mb-4">Cultural Sites</h3>
-                <ul className="space-y-2 text-gray-600">
-                  <li>Oku Fon's palace</li>
-                  <li>Oku cultural and touristic centre</li>
-                  <li>Lumutu shrine</li>
-                  <li>Historical caves (mbvekyeafon, mbvekngailai, and more)</li>
-                  <li>Oku honey cooperative society</li>
-                  <li>Oku paper industry</li>
-                </ul>
-              </div>
+          <div className="mt-12 grid gap-8 md:grid-cols-2">
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold mb-4">Cultural Experiences</h2>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <Camera className="h-5 w-5 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Oku Fon's Palace</h3>
+                    <p className="text-gray-600">Experience traditional leadership and cultural artifacts</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <Camera className="h-5 w-5 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Cultural and Touristic Centre</h3>
+                    <p className="text-gray-600">Learn about local customs and traditions</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <Camera className="h-5 w-5 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Lumutu Shrine</h3>
+                    <p className="text-gray-600">Visit sacred cultural sites</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50 p-6 rounded-lg">
+              <h2 className="text-2xl font-bold mb-4">Natural Attractions</h2>
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <MapPin className="h-5 w-5 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Waterfalls</h3>
+                    <p className="text-gray-600">Visit Tolon, Kenshing, Enfwe, and other spectacular falls</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <MapPin className="h-5 w-5 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Historic Caves</h3>
+                    <p className="text-gray-600">Explore mbvekyeafon, mbvekngailai, and other ancient caves</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <MapPin className="h-5 w-5 mr-3 mt-1" />
+                  <div>
+                    <h3 className="font-semibold">Ijim Mountain</h3>
+                    <p className="text-gray-600">Trek through pristine mountain landscapes</p>
+                  </div>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
