@@ -19,14 +19,14 @@ export function News() {
       title: "Mount Oku Conservation Initiative",
       description: "New measures implemented to protect Mount Oku, the second highest peak in West Africa, ensuring sustainable tourism and environmental preservation.",
       date: "2024-03-10",
-      image: "/lovable-uploads/639c2931-b6cf-499e-9da9-619614daebde.png"
+      image: "/lovable-uploads/8aba75f5-225e-4240-ad3a-5a416bb7aae6.png"
     },
     {
       id: 3,
       title: "Lake Oku Preservation Project",
       description: "Community-led initiative launches to preserve Lake Oku's unique ecosystem and promote sustainable tourism practices.",
       date: "2024-03-08",
-      image: "/lovable-uploads/7ac15d57-65eb-4a0c-bccf-b86ae5953c11.png"
+      image: "/lovable-uploads/92a627da-f60c-42a8-98a6-8fcef13ea3c7.png"
     }
   ];
 
