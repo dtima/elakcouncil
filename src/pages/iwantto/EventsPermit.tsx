@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, FileText, Info } from "lucide-react";
+import { Calendar, FileText, Users, Info } from "lucide-react";
 
 export default function EventsPermit() {
   return (
@@ -26,8 +26,21 @@ export default function EventsPermit() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="mb-4">Permits for traditional ceremonies and cultural celebrations</p>
+                <p className="mb-4">Permits for traditional ceremonies and cultural celebrations at the Oku Fon's palace and cultural center</p>
                 <Button>Apply Now</Button>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Users className="h-5 w-5" />
+                  Community Gatherings
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4">Permits for community meetings and public assemblies in Elak's 36 villages</p>
+                <Button variant="outline">Learn More</Button>
               </CardContent>
             </Card>
 
@@ -40,19 +53,6 @@ export default function EventsPermit() {
               </CardHeader>
               <CardContent>
                 <p className="mb-4">Permits for markets, trade fairs, and business exhibitions</p>
-                <Button variant="outline">Learn More</Button>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Info className="h-5 w-5" />
-                  Public Gatherings
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4">Permits for community meetings and public assemblies</p>
                 <Button variant="outline">View Guidelines</Button>
               </CardContent>
             </Card>
@@ -75,8 +75,8 @@ export default function EventsPermit() {
                 <h3 className="text-xl font-semibold mb-4">Processing Times</h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li>Cultural events: 5-7 working days</li>
+                  <li>Community gatherings: 3-5 working days</li>
                   <li>Commercial events: 10-14 working days</li>
-                  <li>Public gatherings: 3-5 working days</li>
                 </ul>
               </div>
             </div>
