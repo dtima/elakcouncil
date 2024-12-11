@@ -1,6 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
-import { MapPin, Camera, Tree } from "lucide-react";
+import { MapPin, Camera, Trees } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function ThingsToDo() {
@@ -67,7 +67,7 @@ export default function ThingsToDo() {
                   Explore unique flora and fauna in our protected forest reserve.
                 </p>
                 <div className="flex items-center text-gray-500 mb-4">
-                  <Tree className="h-5 w-5 mr-2" />
+                  <Trees className="h-5 w-5 mr-2" />
                   <span>Kilum-Ijim Forest</span>
                 </div>
                 <Button className="w-full">Discover</Button>
