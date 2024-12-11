@@ -26,19 +26,31 @@ export function QuickLinks() {
         
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6">
           {communalServices.map((service, index) => (
-            <Button
-              key={index}
-              variant="outline"
-              asChild
-              className="h-auto flex-col gap-2 md:gap-4 p-3 md:p-6 hover:bg-white/50 transition-all duration-300 border-[#D3E4FD] hover:border-[#1EAEDB]"
-            >
-              <a href={service.href}>
+            service.href ? (
+              <Button
+                key={index}
+                variant="outline"
+                asChild
+                className="h-auto flex-col gap-2 md:gap-4 p-3 md:p-6 hover:bg-white/50 transition-all duration-300 border-[#D3E4FD] hover:border-[#1EAEDB]"
+              >
+                <a href={service.href}>
+                  {service.icon}
+                  <span className="text-xs md:text-sm font-medium text-center text-[#8E9196]">
+                    {service.label}
+                  </span>
+                </a>
+              </Button>
+            ) : (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center gap-2 md:gap-4 p-3 md:p-6 border border-[#D3E4FD] rounded-md"
+              >
                 {service.icon}
                 <span className="text-xs md:text-sm font-medium text-center text-[#8E9196]">
                   {service.label}
                 </span>
-              </a>
-            </Button>
+              </div>
+            )
           ))}
         </div>
       </div>
