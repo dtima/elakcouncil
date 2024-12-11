@@ -37,10 +37,11 @@ export const getNavigationItems = (t: (key: string) => string) => [
   {
     trigger: t("nav.iwantto"),
     items: [
-      { href: "/i-want-to/ceremonial", label: "Traditional Ceremonies" },
-      { href: "/i-want-to/find-business", label: "Local Businesses" },
+      { href: "/i-want-to/ceremonial", label: "Obtain Ceremonial Documents" },
+      { href: "/i-want-to/find-business", label: "Find Registered Business" },
       { href: "/i-want-to/business-license", label: "Get Business License" },
       { href: "/i-want-to/events-permit", label: "Event Permits" },
+      { href: "/i-want-to/complaint", label: "File a Complaint" },
     ],
   },
 ];

@@ -26,6 +26,7 @@ import Ceremonial from "./pages/iwantto/Ceremonial";
 import FindBusiness from "./pages/iwantto/FindBusiness";
 import BusinessLicense from "./pages/iwantto/BusinessLicense";
 import EventsPermit from "./pages/iwantto/EventsPermit";
+import Complaint from "./pages/iwantto/Complaint";
 
 const App = () => (
   <ErrorBoundary>
@@ -64,6 +65,7 @@ const App = () => (
             <Route path="/i-want-to/find-business" element={<FindBusiness />} />
             <Route path="/i-want-to/business-license" element={<BusinessLicense />} />
             <Route path="/i-want-to/events-permit" element={<EventsPermit />} />
+            <Route path="/i-want-to/complaint" element={<Complaint />} />
 
             {/* 404 Route */}
             <Route path="*" element={<NotFound />} />
