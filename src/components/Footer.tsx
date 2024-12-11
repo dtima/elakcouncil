@@ -39,12 +39,12 @@ export const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-lg md:text-xl font-bold">Quick Links</h3>
             <ul className="space-y-2 text-sm md:text-base">
-              <li><a href="/tourism/mount-oku" className="hover:underline">Mount Oku</a></li>
-              <li><a href="/tourism/lake-oku" className="hover:underline">Lake Oku</a></li>
-              <li><a href="/tourism/kilum-forest" className="hover:underline">Kilum Forest</a></li>
-              <li><a href="/services/civil-status" className="hover:underline">Civil Status Services</a></li>
-              <li><a href="/business/licenses" className="hover:underline">Business Licenses</a></li>
-              <li><a href="/council/projects" className="hover:underline">Council Projects</a></li>
+              <li><a href="/government/meet-mayor" className="hover:underline">Meet the Mayor</a></li>
+              <li><a href="/government/cabinet" className="hover:underline">The Mayor's Cabinet</a></li>
+              <li><a href="/residents/directions" className="hover:underline">Directions to Council Hall</a></li>
+              <li><a href="/visitors/getting-around" className="hover:underline">Getting Around – Visitors</a></li>
+              <li><a href="/residents/public-safety" className="hover:underline">Public Safety</a></li>
+              <li><a href="/residents/parks-recreation" className="hover:underline">Parks & Recreation</a></li>
             </ul>
           </div>
 

@@ -13,7 +13,7 @@ export default function History() {
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h1 className="text-4xl font-bold text-white">History of Mbonge</h1>
+            <h1 className="text-4xl font-bold text-white">History of Elak</h1>
           </div>
         </div>
 

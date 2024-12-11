@@ -10,8 +10,8 @@ interface LanguageContextType {
 
 const translations = {
   en: {
-    "hero.title": "Welcome to Mbonge Council",
-    "hero.subtitle": "Unity for Progress & Development - A vibrant municipality in the heart of Cameroon",
+    "hero.title": "Welcome to Elak Council",
+    "hero.subtitle": "Unity Through Progress & Development - A vibrant council in Cameroon's North West Region",
     "hero.searchPlaceholder": "What can we help you find?",
     "nav.home": "Home",
     "nav.government": "Government",

@@ -10,11 +10,11 @@ export default function GettingAround() {
         <div className="relative h-[300px] overflow-hidden">
           <img
             src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05"
-            alt="Getting Around Mbonge"
+            alt="Getting Around Elak"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
-            <h1 className="text-4xl font-bold text-white">Getting Around Mbonge</h1>
+            <h1 className="text-4xl font-bold text-white">Getting Around Elak</h1>
           </div>
         </div>
 
