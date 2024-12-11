@@ -11,7 +11,7 @@ export default function Licenses() {
         <div className="bg-cameroon-green text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold mb-4">Business Licenses</h1>
-            <p className="text-xl">Everything you need to know about obtaining and maintaining business licenses in Mbonge</p>
+            <p className="text-xl">Everything you need to know about obtaining and maintaining business licenses in Elak</p>
           </div>
         </div>
 
@@ -20,7 +20,7 @@ export default function Licenses() {
             <div className="p-6 border rounded-lg">
               <FileText className="w-12 h-12 text-cameroon-green mb-4" />
               <h3 className="text-xl font-semibold mb-2">New Business License</h3>
-              <p className="text-gray-600 mb-4">Apply for a new business license in Mbonge</p>
+              <p className="text-gray-600 mb-4">Apply for a new business license in Elak</p>
               <Button variant="outline" className="w-full">
                 Start Application
               </Button>
@@ -51,10 +51,11 @@ export default function Licenses() {
               <div className="bg-white p-4 rounded shadow-sm">
                 <h3 className="font-semibold">Required Documents</h3>
                 <ul className="list-disc list-inside text-gray-600 mt-2">
-                  <li>Valid ID or passport</li>
+                  <li>Valid identification (National ID or passport)</li>
                   <li>Tax clearance certificate</li>
-                  <li>Proof of business location</li>
+                  <li>Proof of business location in Elak</li>
                   <li>Business registration documents</li>
+                  <li>Certificate of incorporation (for companies)</li>
                 </ul>
               </div>
               <div className="bg-white p-4 rounded shadow-sm">
@@ -63,6 +64,7 @@ export default function Licenses() {
                   <li>Application fee: 25,000 FCFA</li>
                   <li>Annual renewal fee: 15,000 FCFA</li>
                   <li>Late renewal penalty: 5,000 FCFA</li>
+                  <li>Certificate modification: 10,000 FCFA</li>
                 </ul>
               </div>
             </div>

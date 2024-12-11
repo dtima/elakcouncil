@@ -20,7 +20,13 @@ export default function Ceremonial() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="mb-4">Schedule your civil marriage ceremony at the Mbonge Council.</p>
+              <p className="mb-4">Schedule your civil marriage ceremony at the Elak Council.</p>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Marriage certificates</li>
+                <li>Civil ceremony arrangements</li>
+                <li>Marriage counseling services</li>
+                <li>Document verification</li>
+              </ul>
               <Button>Book Appointment</Button>
             </CardContent>
           </Card>
@@ -34,6 +40,12 @@ export default function Ceremonial() {
             </CardHeader>
             <CardContent>
               <p className="mb-4">Get your documents authenticated by council officials.</p>
+              <ul className="list-disc list-inside mb-4 text-gray-600">
+                <li>Birth certificates</li>
+                <li>Death certificates</li>
+                <li>Official declarations</li>
+                <li>Document legalization</li>
+              </ul>
               <Button>Learn More</Button>
             </CardContent>
           </Card>

@@ -10,7 +10,7 @@ export default function Suppliers() {
         <div className="bg-cameroon-green text-white py-16">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <h1 className="text-4xl font-bold mb-4">Supplier Registration</h1>
-            <p className="text-xl">Partner with Mbonge Council as a registered supplier</p>
+            <p className="text-xl">Partner with Elak Council as a registered supplier</p>
           </div>
         </div>
 
@@ -39,10 +39,11 @@ export default function Suppliers() {
               <div className="bg-white p-4 rounded shadow-sm">
                 <h3 className="font-semibold mb-2">Goods & Equipment</h3>
                 <ul className="list-disc list-inside text-gray-600">
-                  <li>Office Supplies</li>
+                  <li>Office Supplies & Furniture</li>
                   <li>Construction Materials</li>
-                  <li>IT Equipment</li>
+                  <li>IT Equipment & Services</li>
                   <li>Vehicles & Machinery</li>
+                  <li>Agricultural Equipment</li>
                 </ul>
               </div>
               <div className="bg-white p-4 rounded shadow-sm">
@@ -50,8 +51,9 @@ export default function Suppliers() {
                 <ul className="list-disc list-inside text-gray-600">
                   <li>Construction & Maintenance</li>
                   <li>Professional Services</li>
-                  <li>IT Services</li>
+                  <li>IT Services & Support</li>
                   <li>Training & Development</li>
+                  <li>Environmental Services</li>
                 </ul>
               </div>
             </div>
