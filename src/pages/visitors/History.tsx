@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { Footer } from "@/components/Footer";
+import { Scroll, Users, Building, BookOpen } from "lucide-react";
 
 export default function History() {
   return (
@@ -21,15 +22,22 @@ export default function History() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="space-y-8">
               <div>
-                <h2 className="text-3xl font-bold mb-4">Our Heritage</h2>
+                <h2 className="text-3xl font-bold mb-4 flex items-center gap-2">
+                  <Scroll className="h-8 w-8" />
+                  Our Heritage
+                </h2>
                 <p className="text-gray-600">
-                  The Elak council was created by presidential decree No 77/203 of 19st June 1977 as a split from the then Nso council. 
-                  Oral tradition traces the Oku people's origins to Egypt, from where they migrated and eventually settled in the Tikari region.
+                  The Elak council was created by presidential decree No 77/203 of 19th June 1977 as a split from the then Nso council. 
+                  Oral tradition traces the Oku people's origins to Egypt, from where they migrated through Belbele and eventually 
+                  settled in the Tikari region at Rifem.
                 </p>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Timeline</h3>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <BookOpen className="h-6 w-6" />
+                  Historical Timeline
+                </h3>
                 <div className="space-y-4">
                   <div className="flex gap-4">
                     <div className="w-24 font-bold">Ancient</div>
@@ -46,13 +54,13 @@ export default function History() {
                   <div className="flex gap-4">
                     <div className="w-24 font-bold">1977</div>
                     <div className="flex-1">
-                      <p className="text-gray-600">Creation of Elak Council</p>
+                      <p className="text-gray-600">Creation of Elak Council by presidential decree</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
-                    <div className="w-24 font-bold">Present</div>
+                    <div className="w-24 font-bold">1978</div>
                     <div className="flex-1">
-                      <p className="text-gray-600">Modern development and cultural preservation</p>
+                      <p className="text-gray-600">Council begins operations</p>
                     </div>
                   </div>
                 </div>
@@ -61,7 +69,10 @@ export default function History() {
 
             <div className="space-y-8">
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Cultural Heritage</h3>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <Users className="h-6 w-6" />
+                  Cultural Heritage
+                </h3>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold">Ethnic Groups</h4>
@@ -73,20 +84,24 @@ export default function History() {
                   <div>
                     <h4 className="font-semibold">Religion</h4>
                     <p className="text-gray-600">
-                      The municipality embraces religious diversity, with Christianity, Islam, and African Traditional 
-                      Religion practitioners contributing to community development.
+                      The municipality embraces religious diversity, with Christianity (Presbyterian, Roman Catholic, Baptist, 
+                      Full Gospel Mission), Islam, and African Traditional Religion practitioners contributing to community development.
                     </p>
                   </div>
                 </div>
               </div>
 
               <div className="bg-gray-50 p-6 rounded-lg">
-                <h3 className="text-xl font-bold mb-4">Demographics</h3>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <Building className="h-6 w-6" />
+                  Demographics
+                </h3>
                 <ul className="space-y-2 text-gray-600">
                   <li>Population: 182,879 inhabitants</li>
                   <li>36 villages under traditional leadership</li>
                   <li>Common language: EblamEbkuo</li>
                   <li>Surface area: 750 km²</li>
+                  <li>Population density: 253 inhabitants per km²</li>
                 </ul>
               </div>
             </div>
