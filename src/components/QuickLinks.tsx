@@ -1,56 +1,100 @@
 import { useLanguage } from "@/contexts/LanguageContext";
-import { FileText, Building2, Wrench, FileCheck, Users, Receipt } from "lucide-react";
-import { Button } from "./ui/button";
+import { 
+  FileText, 
+  Building2, 
+  Wrench, 
+  BabyIcon, 
+  Users, 
+  Receipt, 
+  CreditCard 
+} from "lucide-react";
+
+interface QuickLinkItemProps {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  href?: string;
+}
+
+const QuickLinkItem = ({ icon, title, description, href }: QuickLinkItemProps) => {
+  const baseClasses = "p-6 flex flex-col items-center text-center transition-all duration-200 rounded-lg bg-white shadow-sm hover:shadow-md";
+  
+  if (href) {
+    return (
+      <a 
+        href={href} 
+        className={`${baseClasses} cursor-pointer`}
+      >
+        <div className="mb-4 text-purple-600">{icon}</div>
+        <h3 className="text-lg font-semibold mb-2">{title}</h3>
+        <p className="text-gray-600 text-sm">{description}</p>
+      </a>
+    );
+  }
+
+  return (
+    <div className={`${baseClasses} cursor-default`}>
+      <div className="mb-4 text-purple-600">{icon}</div>
+      <h3 className="text-lg font-semibold mb-2">{title}</h3>
+      <p className="text-gray-600 text-sm">{description}</p>
+    </div>
+  );
+};
 
 export function QuickLinks() {
   const { t } = useLanguage();
 
-  const communalServices = [
-    { icon: <FileText className="h-6 w-6 md:h-8 md:w-8 text-[#1EAEDB]" />, label: "Licenses & Permits", href: "/services/licenses" },
-    { icon: <Building2 className="h-6 w-6 md:h-8 md:w-8 text-[#1EAEDB]" />, label: "Administrative Services", href: "/services/administrative" },
-    { icon: <Wrench className="h-6 w-6 md:h-8 md:w-8 text-[#1EAEDB]" />, label: "Technical Services", href: "/services/technical" },
-    { icon: <FileCheck className="h-6 w-6 md:h-8 md:w-8 text-[#1EAEDB]" />, label: "Birth Certificate Service", href: "/services/birth-certificate" },
-    { icon: <Users className="h-6 w-6 md:h-8 md:w-8 text-[#1EAEDB]" />, label: "Social Affairs", href: "/services/social" },
-    { icon: <Receipt className="h-6 w-6 md:h-8 md:w-8 text-[#1EAEDB]" />, label: "Communal Tax Service", href: "/services/tax" },
+  const services = [
+    {
+      icon: <FileText className="w-8 h-8" />,
+      title: "Licenses & Permits",
+      description: "Apply for various licenses and permits",
+    },
+    {
+      icon: <Building2 className="w-8 h-8" />,
+      title: "Administrative Services",
+      description: "Access administrative services and support",
+    },
+    {
+      icon: <Wrench className="w-8 h-8" />,
+      title: "Technical Services",
+      description: "Get technical assistance and guidance",
+    },
+    {
+      icon: <BabyIcon className="w-8 h-8" />,
+      title: "Birth Certificate Service",
+      description: "Request and process birth certificates",
+    },
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Social Affairs",
+      description: "Access social services and community support",
+    },
+    {
+      icon: <CreditCard className="w-8 h-8" />,
+      title: "Communal Tax Service",
+      description: "Pay and manage communal taxes",
+    }
   ];
 
   return (
-    <section className="py-8 md:py-16 bg-[#E5DEFF]">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#8E9196] mb-2">
+    <section className="py-12 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl font-bold mb-4 relative inline-block">
             Communal Services
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-blue-600 transform -translate-y-2"></div>
           </h2>
-          <div className="w-20 h-1 bg-[#1EAEDB] mx-auto rounded-full"></div>
         </div>
-        
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-6">
-          {communalServices.map((service, index) => (
-            service.href ? (
-              <Button
-                key={index}
-                variant="outline"
-                asChild
-                className="h-auto flex-col gap-2 md:gap-4 p-3 md:p-6 hover:bg-white/50 transition-all duration-300 border-[#D3E4FD] hover:border-[#1EAEDB]"
-              >
-                <a href={service.href}>
-                  {service.icon}
-                  <span className="text-xs md:text-sm font-medium text-center text-[#8E9196]">
-                    {service.label}
-                  </span>
-                </a>
-              </Button>
-            ) : (
-              <div
-                key={index}
-                className="flex flex-col items-center justify-center gap-2 md:gap-4 p-3 md:p-6 border border-[#D3E4FD] rounded-md"
-              >
-                {service.icon}
-                <span className="text-xs md:text-sm font-medium text-center text-[#8E9196]">
-                  {service.label}
-                </span>
-              </div>
-            )
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service, index) => (
+            <QuickLinkItem
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+            />
           ))}
         </div>
       </div>
