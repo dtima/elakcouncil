@@ -23,7 +23,7 @@ const QuickLinkItem = ({ icon, title, description, href }: QuickLinkItemProps) =
     return (
       <a 
         href={href} 
-        className={`${baseClasses} cursor-pointer`}
+        className={`${baseClasses} cursor-pointer hover:bg-gray-50`}
       >
         <div className="mb-4 text-purple-600">{icon}</div>
         <h3 className="text-lg font-semibold mb-2">{title}</h3>
