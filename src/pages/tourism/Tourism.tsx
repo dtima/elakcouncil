@@ -3,6 +3,7 @@ import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/tourism/HeroSection";
 import { TopAttractions } from "@/components/tourism/TopAttractions";
 import { CulturalExperiences } from "@/components/tourism/CulturalExperiences";
+import { sun } from 'lucide-react';
 
 export default function Tourism() {
   return (
