@@ -12,7 +12,11 @@ export const HeroSection = () => {
         <div className="text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">ELAK MUNICIPALITY: A TOURISTIC DESTINATION</h1>
           <p className="text-xl md:text-2xl mb-6">Exploring The Hidden Jewels of Oku</p>
-          <Button variant="outline" className="text-white border-white hover:bg-white hover:text-black">
+          <Button 
+            variant="outline" 
+            className="text-white border-white hover:bg-white hover:text-black"
+            onClick={() => document.getElementById('attractions')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             Discover More
           </Button>
         </div>

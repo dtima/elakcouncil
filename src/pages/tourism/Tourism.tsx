@@ -1,8 +1,10 @@
 import { Navigation } from "@/components/Navigation";
+import { Footer } from "@/components/Footer";
 import { HeroSection } from "@/components/tourism/HeroSection";
 import { TopAttractions } from "@/components/tourism/TopAttractions";
 import { CulturalExperiences } from "@/components/tourism/CulturalExperiences";
-import { Sun, MapPin, Mountain, Camera } from "lucide-react";
+import { CouncilInitiatives } from "@/components/tourism/CouncilInitiatives";
+import { TouristActivities } from "@/components/tourism/TouristActivities";
 
 export default function Tourism() {
   return (
@@ -18,7 +20,10 @@ export default function Tourism() {
         </div>
         <TopAttractions />
         <CulturalExperiences />
+        <CouncilInitiatives />
+        <TouristActivities />
       </main>
+      <Footer />
     </div>
   );
 }
