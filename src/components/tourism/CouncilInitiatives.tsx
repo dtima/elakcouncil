@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building, Road, Shield } from "lucide-react";
+import { Building, Route, Shield } from "lucide-react";
 
 export const CouncilInitiatives = () => {
   const initiatives = [
@@ -13,7 +13,7 @@ export const CouncilInitiatives = () => {
       title: "Infrastructure Development",
       description: "Enhanced road networks and facilities for seamless tourist experiences.",
       image: "/lovable-uploads/08d8184d-8bc3-4b00-84e6-5ec37bd7c60a.png",
-      icon: <Road className="h-5 w-5 text-cameroon-green" />
+      icon: <Route className="h-5 w-5 text-cameroon-green" />
     },
     {
       title: "Conservation Efforts",
