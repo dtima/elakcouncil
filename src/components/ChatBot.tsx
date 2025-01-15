@@ -7,29 +7,45 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 
 const faqs = [
   {
-    question: "How do I obtain a birth certificate in Elak Council?",
-    answer: "To obtain a birth certificate in Elak Council, visit the Civil Status Registry office with the required documents: declaration of birth from the hospital, parents' identification, and marriage certificate (if applicable). The process typically takes 3-5 working days.",
+    question: "Where is Elak Council located?",
+    answer: "Elak Council is found in Bui Division of the North West Region of Cameroon. It is bounded to the North by Nkor municipality, to the South by Babessi municipality, to the East by Jakiri municipality and to the West by Belo Municipality. The municipality has a total surface area of 750 km2 with an estimated population of 200,000 inhabitants.",
   },
   {
-    question: "What are the main tourist attractions in Elak?",
-    answer: "Elak boasts several notable attractions including Mount Oku (second highest in West Africa at 3011M), Lake Oku, the Kilum forest reserve, multiple waterfalls (Tolon, Kenshing, Enfwe, etc.), and the historic Oku Fon's palace. The area is also famous for its cultural heritage and traditional crafts.",
+    question: "When was Elak Council created?",
+    answer: "The Elak Council was created by Presidential Decree No. 77/203 of 19 June 1977 as a split from the Nso Council. It started functioning in 1978.",
   },
   {
-    question: "How can I pay my council taxes?",
-    answer: "Council taxes can be paid directly at the Elak Council Revenue Office during working hours (Monday to Friday, 8:15 AM - 5:00 PM). The council is working on implementing digital payment solutions for easier access.",
+    question: "Who is the current Lord Mayor of Elak council?",
+    answer: "Mr. Ngum Jerome Njioh is the current Lord Mayor of Elak Council. He is serving his 3rd term as Lord Mayor.",
   },
   {
-    question: "What documents do I need for a building permit in Elak?",
-    answer: "For a building permit in Elak, you need: architectural plans (3 copies), proof of land ownership, site plan, technical report, tax clearance certificate, and application letter to the Mayor. Submit these at the Technical Service office of the Council.",
+    question: "How can I obtain a Birth Certificate from Elak council?",
+    answer: "For children 0-3 months: Bring the hospital birth card and photocopies of parents' ID cards/birth certificates to the council. The certificate is issued free of charge within 90 days from birth. For births over 90 days old, a declaratory judgment from court is required. For births outside hospitals, a declaration from the village head or competent authority is needed.",
   },
   {
-    question: "How can I visit the Kilum forest reserve?",
-    answer: "To visit the Kilum forest reserve, contact the Elak Council Tourism Office or the Forest Management Institutions (FMIs). Guided tours are available, and you'll need to obtain necessary permits. The reserve is home to unique flora and is an important conservation area.",
+    question: "How can I obtain a Marriage Certificate?",
+    answer: "A marriage is celebrated by the Civil status registrar after one month from registration. Required documents include: photocopies of birth certificates and ID cards of spouses, ID cards of parents and witnesses, death certificate of deceased spouse (if applicable), divorce judgment (if applicable), and certificates of celibacy. Express marriages require a waiver from the state counsel.",
   },
   {
-    question: "What are the requirements for business registration in Elak?",
-    answer: "To register a business in Elak, you need: valid ID, taxpayer's card, business plan or description, location details, and applicable fees. Visit the Council's Economic Development office for guidance and processing.",
+    question: "What are the tourist attractions in Elak?",
+    answer: "Elak municipality features numerous attractions including: Mount Oku (second highest in West Africa), Kilum mountain forest reserve, Lake Oku, multiple waterfalls (Tolon, Kenshing, Enfwe, Tankon, Mbancham, Kedse), Oku Fon's palace, Cultural and touristic centre, Oku honey cooperative, various caves, and rich cultural heritage including traditional dances and ceremonies.",
   },
+  {
+    question: "How can I invest in Elak Municipality?",
+    answer: "Elak Municipality offers investment opportunities across primary, secondary, and tertiary sectors. The council welcomes partnerships in agricultural product transformation, handicraft, education, health, tourism, energy, commerce, and manufacturing industries. Contact the council with your investment plan or business model for collaboration.",
+  },
+  {
+    question: "What types of taxes does the council collect?",
+    answer: "The council collects various taxes including: Global tax, Liquor license, Business license, Property tax, Cattle tax, Hygiene tax, Market fees, Building permits, Parking tax, Entertainment tax, Advertisement tax, Council stamp duties, Water maintenance fee, and other indirect council taxes.",
+  },
+  {
+    question: "How can I obtain a shop in Elak main market?",
+    answer: "Submit a handwritten application to the Lord Mayor with your ID copy and intended business type. Upon approval, pay the specified development fee, sign a Tenancy Agreement Form for ground rent payments, and receive your assigned numbered shed.",
+  },
+  {
+    question: "What services does Elak Council offer?",
+    answer: "Elak Council offers various services including: Civil Status Certificates (birth, death, marriage), Agricultural support, Urban development, Environmental protection, Education support, Healthcare services, Water and Energy management, Road works, Women Empowerment programs, Tourism development, Commerce regulation, Transport management, and Sports promotion.",
+  }
 ];
 
 const ChatBot = () => {
@@ -60,12 +76,12 @@ const ChatBot = () => {
                 </Button>
                 <div className="bg-muted p-4 rounded-lg">
                   <h3 className="font-semibold mb-2">{selectedFaq.question}</h3>
-                  <p className="text-muted-foreground">{selectedFaq.answer}</p>
+                  <p className="text-muted-foreground whitespace-pre-wrap">{selectedFaq.answer}</p>
                 </div>
               </div>
             ) : (
               <Command className="rounded-lg border shadow-md">
-                <CommandInput placeholder="Search Elak Council services and information..." />
+                <CommandInput placeholder="Search for information about Elak Council services..." />
                 <CommandList>
                   <CommandEmpty>No results found.</CommandEmpty>
                   <CommandGroup heading="Frequently Asked Questions">
