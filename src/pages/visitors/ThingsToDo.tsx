@@ -19,7 +19,7 @@ export default function ThingsToDo() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
-                src="/lovable-uploads/34e15787-432a-4055-b71f-2acb05e270ff.png" 
+                src="/lovable-uploads/3f5d3a12-cf9c-4196-9835-7925385833d3.png" 
                 alt="Mount Oku" 
                 className="w-full h-48 object-cover"
               />
@@ -38,7 +38,7 @@ export default function ThingsToDo() {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
-                src="/lovable-uploads/695e7c5c-21ab-43b6-81eb-390c5abdaf9d.png" 
+                src="/lovable-uploads/64b1b326-7802-4ba9-9744-3074d76568a1.png" 
                 alt="Lake Oku" 
                 className="w-full h-48 object-cover"
               />
@@ -57,7 +57,7 @@ export default function ThingsToDo() {
 
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
-                src="/lovable-uploads/4be57948-b4b2-48cd-8f75-8d20c6518542.png" 
+                src="/lovable-uploads/1adb85a4-c41a-4742-aa19-124ef198c550.png" 
                 alt="Kilum Forest" 
                 className="w-full h-48 object-cover"
               />
