@@ -19,7 +19,7 @@ export default function ThingsToDo() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <img 
-                src="/lovable-uploads/3f5d3a12-cf9c-4196-9835-7925385833d3.png" 
+                src="/lovable-uploads/92f14df7-bb5f-4b51-9e2a-9c51f440d941.png" 
                 alt="Mount Oku" 
                 className="w-full h-48 object-cover"
               />
@@ -73,6 +73,7 @@ export default function ThingsToDo() {
                 <Button className="w-full">Discover</Button>
               </div>
             </div>
+
           </div>
 
           <div className="mt-12 grid gap-8 md:grid-cols-2">
